@@ -1,0 +1,40 @@
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+i {
+  font-size: 25px;
+}
+.fb {
+  padding: 0;
+  &-header {
+    padding: 12px 10px;
+    padding-bottom: 0;
+    &-logo {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  .divider {
+    margin: 0;
+  }
+  &-post-section {
+    padding: 12px 10px;
+    .profile-picture {
+      width: 36px;
+    }
+    input {
+      padding: 12px;
+      width: 269px;
+      height: 36px;
+      border: 1px solid #d2cece;
+      background: rgba(240, 242, 245, 1);
+    }
+  }
+  &-body {
+    background: rgba(118, 122, 125, 0.743);
+  }
+}
