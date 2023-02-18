@@ -30,38 +30,32 @@
     <div class="fb-menu container">
       <ul class="menu-list d-flex justify-content-between">
         <li class="list-item home">
-          <a href="">
-            <!-- <img src="" alt="home"> -->
-            <i class="bi bi-house-door-fill"></i>
+          <a href="" [routerLink]="['/']">
+            <i class="bi bi-house-door"></i>
           </a>
         </li>
         <li class="list-item add-friend">
-          <a href="">
-            <!-- <img src="" alt="add-friend"> -->
+          <a href="" [routerLink]="['/friends']" >
             <i class="bi bi-people"></i>
           </a>
         </li>
         <li class="list-item video-section">
-          <a href="">
-            <!-- <img src="" alt="video-section"> -->
+          <a href="" [routerLink]="['/contents']">
             <i class="bi bi-play-btn"></i>
           </a>
         </li>
         <li class="list-item store">
-          <a href="">
-            <!-- <img src="" alt="store"> -->
+          <a href="" [routerLink]="['/shop']">
             <i class="bi bi-shop"></i>
           </a>
         </li>
         <li class="list-item notification">
-          <a href="">
-            <!-- <img src="" alt="notification"> -->
+          <a href="" [routerLink]="['/notification']">
             <i class="bi bi-bell"></i>
           </a>
         </li>
         <li class="list-item hamburger">
-          <a href="">
-            <!-- <img src="" alt="hamburger"> -->
+          <a href="" [routerLink]="['/menu']">
             <i class="bi bi-list"></i>
           </a>
         </li>
@@ -82,6 +76,6 @@
     </div>
   </div>
   <div class="fb-body">
-    <app-timeline></app-timeline>
+    <router-outlet></router-outlet>
   </div>
 </div>

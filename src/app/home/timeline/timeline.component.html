@@ -1,17 +1,17 @@
 <div class="timeline container-fluid d-flex flex-column">
-  <div class="timeline-container">
+  <div class="timeline-container" *ngFor="let timeline of timelineDetails">
     <div class="timeline-container-header">
       <div class="top d-flex justify-content-between">
         <div class="profile d-flex">
           <div class="profile-pic">
-            <img src="assets/jpg/rajProfile.jpg" alt="profile" class="img-fluid rounded-circle">
+            <img src="{{timeline.profilePicPath}}" alt="profile" class="img-fluid rounded-circle">
           </div>
           <div class="profile-details m-2">
             <div class="title">
-              <h3>Raj Benarjee</h3>
+              <h3>{{timeline.name}}</h3>
             </div>
             <div class="sub-title">
-              <span class="me-2">8h</span>
+              <span class="me-2">{{timeline.time}}</span>
               <i class="bi bi-globe-americas"></i>
             </div>
           </div>
@@ -27,13 +27,13 @@
       </div>
       <div class="container">
         <div class="about-post">
-          <p></p>
+          <p>{{timeline.aboutPost}}</p>
         </div>
       </div>
     </div>
     <div class="timeline-container-body">
       <div class="media">
-        <img src="assets/jpg/meme.jpg" alt="" class="img-fluid">
+        <img src="{{timeline.postMediaPath}}" alt="" class="img-fluid">
       </div>
       <div class="media-reaction">
         <div class="likes-section"></div>
