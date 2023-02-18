@@ -1,1 +1,37 @@
-<p>friends works!</p>
+<div class="friend">
+  <div class="friend-header d-flex justify-content-between">
+    <div class="friend-header-name">
+      <h1 class="fw-bold">Friends</h1>
+    </div>
+    <div class="friend-header-search">
+      <i class="bi bi-search"></i>
+    </div>
+  </div>
+  <div class="friend-action-tab d-flex gap-3">
+    <button class="btn btn-action rounded-pill fw-bold">Suggestion</button>
+    <button class="btn btn-action rounded-pill fw-bold">Your Friends</button>
+  </div>
+  <hr class="divider">
+  <div class="friend-request">
+    <div class="friend-request-header d-flex justify-content-between">
+      <div class="title">
+        <h5 class="fw-bold">Friend requests <span class="length fw-bold">{{requests.length}}</span></h5>
+      </div>
+      <div class="link">
+        <a href="#" style="text-decoration: none;">See all</a>
+      </div>
+    </div>
+    <div class="friend-request-profile d-flex gap-2" *ngFor="let req of requests">
+      <div class="profile">
+        <img src="{{req.profilePath}}" class="img-fluid rounded-circle" alt="profile">
+      </div>
+      <div class="content align-self-center">
+        <h4>{{req.name}}</h4>
+        <div class="response d-flex gap-3">
+          <button class="btn btn-primary response-btn">Confirm</button>
+          <button class="btn btn-light response-btn">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,6 +4,23 @@ ul {
     list-style: none;
   }
 }
+.fb-post-section {
+  background: #fff;
+  padding: 12px 10px;
+  i {
+    font-size: 25px;
+  }
+  .profile-picture {
+    width: 36px;
+  }
+  input {
+    padding: 12px;
+    width: 269px;
+    height: 36px;
+    border: 1px solid #d2cece;
+    background: rgba(240, 242, 245, 1);
+  }
+}
 
 .timeline {
   padding: 0;
@@ -28,7 +45,7 @@ ul {
               .sub-title {
                 span {
                   font-size: 12px;
-                  color:#8a8d91;
+                  color: #8a8d91;
                 }
               }
             }
@@ -38,7 +55,7 @@ ul {
     }
     &-footer {
       padding: 12px;
-      .item{
+      .item {
         width: 126px;
         padding-top: 12px;
         padding-bottom: 12px;

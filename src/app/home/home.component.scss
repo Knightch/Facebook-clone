@@ -19,20 +19,9 @@ i {
     }
   }
   .divider {
+    height: 4px;
+    background: #666769;
     margin: 0;
-  }
-  &-post-section {
-    padding: 12px 10px;
-    .profile-picture {
-      width: 36px;
-    }
-    input {
-      padding: 12px;
-      width: 269px;
-      height: 36px;
-      border: 1px solid #d2cece;
-      background: rgba(240, 242, 245, 1);
-    }
   }
   &-body {
     background: rgba(118, 122, 125, 0.743);
